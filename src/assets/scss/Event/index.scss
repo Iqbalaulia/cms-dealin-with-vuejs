@@ -1,0 +1,60 @@
+@import "../base/variables.scss";
+
+.card-header {
+  .btn-event {
+    font-size: 14px;
+    font-family: "Poppins";
+    border: 1px solid $blue-1;
+    background-color: $blue-1;
+    color: $white;
+    border-radius: 10px;
+  }
+}
+
+.add_event {
+  &_left {
+    .form-group {
+      label {
+        font-size: 16px;
+        font-family: "Poppins";
+        color: $black-1;
+      }
+
+      i {
+        font-size: 50px !important;
+        margin: 2.8rem 0rem 0rem 0rem;
+      }
+
+      .el-upload__text {
+        font-family: "Poppins";
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: "Poppins";
+        color: $black-3;
+      }
+
+      .visible {
+        .content {
+          span {
+            font-size: 14px;
+            color: $black-2;
+            font-family: "Poppins";
+          }
+        }
+      }
+    }
+  }
+
+  &_right {
+    .form-group {
+      label {
+        font-size: 16px;
+        font-family: "Poppins";
+        color: $black-1;
+      }
+    }
+  }
+}

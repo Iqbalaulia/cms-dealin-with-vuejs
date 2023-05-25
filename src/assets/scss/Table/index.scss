@@ -1,0 +1,52 @@
+@import "../base/variables.scss";
+
+.informasi_table {
+  display: flex;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+
+  span {
+    color: $black-4;
+    font-family: "Poppins";
+    font-size: 14px;
+    align-items: center !important;
+  }
+
+  .el-table td,
+  .el-table th.is-leaf {
+    background: $black-9 !important;
+    font-family: "Poppins";
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    align-items: baseline;
+
+    li {
+      border: 1px solid;
+      padding: 4px 10px;
+
+      a {
+        text-align: center;
+      }
+      margin-right: 8px;
+      background: $black-5;
+      border-radius: 8px;
+      border: 1px solid $black-5;
+    }
+  }
+}
+
+.pagination_bawah {
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0rem 0rem 0rem;
+}
+
+.is-checked {
+  .el-checkbox__inner {
+    background-color: $yellow-1 !important;
+    border-color: $yellow-1 !important;
+  }
+}

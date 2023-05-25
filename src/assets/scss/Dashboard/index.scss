@@ -1,0 +1,529 @@
+@import "../base/_variables.scss";
+
+.content {
+  &_section_one {
+    &_idcard {
+      .header_card {
+        label {
+          font-size: 24px;
+          font-weight: bold;
+          font-family: "Poppins";
+          color: $black-1;
+        }
+
+        span {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          color: $blue-1;
+        }
+      }
+
+      .description {
+        font-size: 14px;
+        color: $black-1;
+        font-family: "Poppins";
+      }
+
+      .status_card {
+        width: 100%;
+        height: auto;
+        background-color: $black-6;
+        padding: 10px;
+
+        .pending {
+          .number {
+            font-family: "Poppins";
+            font-size: 32px;
+            color: $blue-3;
+            font-weight: bold;
+            line-height: 42px;
+            margin: 0 !important;
+          }
+          span {
+            font-family: "Poppins";
+            font-size: 16px;
+            line-height: 24px;
+            color: $black-2;
+          }
+        }
+
+        .decline {
+          .number {
+            font-family: "Poppins";
+            font-size: 32px;
+            color: $red-2;
+            font-weight: bold;
+            line-height: 42px;
+            margin: 0 !important;
+          }
+          span {
+            font-family: "Poppins";
+            font-size: 16px;
+            line-height: 24px;
+            color: $black-2;
+          }
+        }
+
+        .approved {
+          .number {
+            font-family: "Poppins";
+            font-size: 32px;
+            color: $green-2;
+            font-weight: bold;
+            line-height: 42px;
+            margin: 0 !important;
+          }
+          span {
+            font-family: "Poppins";
+            font-size: 16px;
+            line-height: 24px;
+            color: $black-2;
+          }
+        }
+      }
+    }
+
+    &_product {
+      .header_card {
+        label {
+          font-size: 24px;
+          font-weight: bold;
+          font-family: "Poppins";
+          color: $black-1;
+        }
+
+        span {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          color: $blue-1;
+        }
+      }
+
+      .description {
+        font-size: 14px;
+        color: $black-1;
+        font-family: "Poppins";
+      }
+
+      .status_card {
+        width: 100%;
+        height: auto;
+        background-color: $black-6;
+        padding: 10px;
+
+        .pending {
+          .number {
+            font-family: "Poppins";
+            font-size: 32px;
+            color: $blue-3;
+            font-weight: bold;
+            line-height: 42px;
+            margin: 0 !important;
+          }
+          span {
+            font-family: "Poppins";
+            font-size: 16px;
+            line-height: 24px;
+            color: $black-2;
+          }
+        }
+
+        .decline {
+          .number {
+            font-family: "Poppins";
+            font-size: 32px;
+            color: $red-2;
+            font-weight: bold;
+            line-height: 42px;
+            margin: 0 !important;
+          }
+          span {
+            font-family: "Poppins";
+            font-size: 16px;
+            line-height: 24px;
+            color: $black-2;
+          }
+        }
+
+        .approved {
+          .number {
+            font-family: "Poppins";
+            font-size: 32px;
+            color: $green-2;
+            font-weight: bold;
+            line-height: 42px;
+            margin: 0 !important;
+          }
+          span {
+            font-family: "Poppins";
+            font-size: 16px;
+            line-height: 24px;
+            color: $black-2;
+          }
+        }
+      }
+    }
+  }
+
+  &_section_two {
+    &_reviews {
+      .header_card {
+        label {
+          font-size: 24px;
+          font-weight: bold;
+          font-family: "Poppins";
+          color: $black-1;
+        }
+
+        span {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          color: $blue-1;
+        }
+      }
+
+      .last_rate {
+        font-family: "Poppins";
+        font-size: 14px;
+        color: $black-2;
+        font-weight: 600;
+      }
+
+      .ratings {
+        margin: 0rem 0rem 1.3rem 0rem;
+        &_header {
+          span {
+            font-family: "Poppins";
+            font-size: 14px;
+            font-weight: 400;
+            color: $black-2;
+          }
+        }
+
+        &_content {
+          p {
+            font-family: "Poppins";
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: $black-1;
+          }
+          span {
+            font-family: "Poppins";
+            color: $black-2;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+
+    &_rating {
+      .header_card {
+        label {
+          font-size: 24px;
+          font-weight: bold;
+          font-family: "Poppins";
+          color: $black-1;
+        }
+      }
+
+      .content {
+        .ios_content {
+          label {
+            font-weight: bold;
+            font-family: "Poppins";
+            color: $black-1;
+          }
+
+          &_statistics {
+            .number {
+              &_statistics {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                color: $black-1;
+              }
+
+              &_text {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                color: $black-1;
+                letter-spacing: 0.2px;
+              }
+            }
+
+            .rating {
+              text-align: center;
+              &_number {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 67px;
+                text-align: center;
+                margin: 0.5rem 0rem 0rem 0rem;
+              }
+            }
+          }
+
+          &_footer {
+            margin: 1rem 0rem 0rem 0rem;
+            span {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              color: $blue-1;
+            }
+          }
+
+          &_chart {
+            .list_rate {
+              margin: 0rem 0rem 0.75rem 0rem;
+              .rate_information {
+                .color {
+                  width: 16px;
+                  height: 16px;
+                  border-radius: 5px;
+                }
+
+                span {
+                  margin: 0rem 0rem 0rem 0.5rem;
+                  font-weight: normal;
+                  font-family: "Poppins";
+                  color: $black-1;
+                  font-size: 14px;
+                }
+              }
+              .rate_number {
+                font-weight: bold;
+                font-family: "Poppins";
+                color: $black-1;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_section_three {
+    .header_card {
+      label {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Poppins";
+        color: $black-1;
+      }
+
+      span {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: $blue-1;
+      }
+    }
+
+    .content_footer {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: $blue-1;
+    }
+  }
+
+  // BOD
+
+  &_bod_one {
+    .header_card {
+      label {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Poppins";
+        color: $black-1;
+      }
+
+      .see_all {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: $blue-1;
+      }
+    }
+
+    .overview_content {
+      .box_information {
+        margin: 0.6rem 0rem 0rem 0rem;
+
+        .income {
+          width: 100%;
+          height: auto;
+          border: 1px solid $blue-1 !important;
+          background-color: $blue-6;
+          border-radius: 8px;
+          padding: 24px;
+
+          .money {
+            span {
+              color: $blue-1;
+              font-weight: bold;
+              font-size: 24px;
+              font-family: "Poppins";
+            }
+          }
+
+          .information {
+            span {
+              font-family: "Poppins";
+              font-weight: bold;
+            }
+
+            .chart_info {
+              width: auto;
+              height: 24px;
+              margin: 0rem 0rem 0rem 0.6rem;
+              background-color: $blue-7;
+              padding: 0rem 0.6rem 0rem 0.6rem;
+              border-radius: 8px;
+              font-size: 12px;
+              color: $blue-1;
+            }
+          }
+        }
+
+        .expense {
+          width: 100%;
+          height: auto;
+          border: 1px solid $red-1 !important;
+          background-color: $red-3;
+          border-radius: 8px;
+          padding: 24px;
+
+          .money {
+            span {
+              color: $red-1;
+              font-weight: bold;
+              font-size: 24px;
+              font-family: "Poppins";
+            }
+          }
+
+          .information {
+            span {
+              font-family: "Poppins";
+              font-weight: bold;
+            }
+
+            .chart_info {
+              width: auto;
+              height: 24px;
+              margin: 0rem 0rem 0rem 0.6rem;
+              background-color: $red-4;
+              padding: 0rem 0.6rem 0rem 0.6rem;
+              border-radius: 8px;
+              font-size: 12px;
+              color: $red-1;
+            }
+          }
+        }
+
+        .margin {
+          width: 100%;
+          height: auto;
+          border: 1px solid $green-1 !important;
+          background-color: $green-3;
+          border-radius: 8px;
+          padding: 24px;
+
+          .money {
+            span {
+              color: $green-1;
+              font-weight: bold;
+              font-size: 24px;
+              font-family: "Poppins";
+            }
+          }
+
+          .information {
+            span {
+              font-family: "Poppins";
+              font-weight: bold;
+            }
+
+            .chart_info {
+              width: auto;
+              height: 24px;
+              margin: 0rem 0rem 0rem 0.6rem;
+              background-color: $green-4;
+              padding: 0rem 0.6rem 0rem 0.6rem;
+              border-radius: 8px;
+              font-size: 12px;
+              color: $green-1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_bod_two {
+    .header_card {
+      label {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Poppins";
+        color: $black-1;
+      }
+
+      span {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: $blue-1;
+      }
+    }
+
+    .content_users {
+      .information {
+        margin: 0.6rem 0rem 0rem 0rem;
+        font-size: 14px;
+        color: $black-1;
+        font-family: "Poppins";
+      }
+    }
+
+    .content_informasi_users {
+      width: 100%;
+      height: auto;
+      background-color: $yellow-1;
+      color: $white;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      padding: 14px;
+      font-weight: bold;
+
+      label{
+              font-size: 18px;
+
+      }
+    }
+  }
+}

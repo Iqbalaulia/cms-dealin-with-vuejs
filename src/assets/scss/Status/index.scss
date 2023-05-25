@@ -1,0 +1,43 @@
+@import "../base/variables.scss";
+
+.default_status {
+  margin: 0px;
+  padding: 0px;
+
+  &_list {
+    list-style: none;
+    display: inline-block;
+    border-radius: 0px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.5rem;
+    margin: 0 0.2rem;
+    background-color: $black-8;
+    color: $black-2;
+    max-width: 110px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+
+    &.approved {
+      background-color: $green-2;
+      color: $green-1;
+    }
+
+    &.warning {
+      background-color: $orange-2;
+      color: $orange-1;
+    }
+    &.decline {
+      background-color: $red-3;
+      color: $red-1;
+    }
+    &.pending {
+      background-color: $blue-7;
+      color: $blue-1;
+    }
+  }
+}

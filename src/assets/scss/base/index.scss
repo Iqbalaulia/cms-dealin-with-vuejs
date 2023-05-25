@@ -1,0 +1,434 @@
+@import "../../fonts/Poppins/Poppins-Font.css";
+@import "_variables.scss";
+$colors: (
+  black-1: $black-1,
+  black-2: $black-2,
+  black-3: $black-3,
+  black-4: $black-4,
+  black-5: $black-5,
+  black-6: $black-6,
+  black-7: $black-7,
+  black-8: $black-8,
+  black-9: $black-9,
+  blue-1: $blue-1,
+  blue-2: $blue-2,
+  blue-3: $blue-3,
+  blue-4: $blue-4,
+  red-1: $red-1,
+  red-2: $red-2,
+  red-3: $red-3,
+  green-1: $green-1,
+  green-2: $green-2,
+  yellow-1: $yellow-1,
+  orange-1: $orange-1,
+  orange-2: $orange-2,
+);
+@each $key, $val in $colors {
+  .col-#{$key} {
+    color: $val;
+  }
+  .bg-#{$key} {
+    background-color: $val !important;
+  }
+  .border-#{$key} {
+    border: 1px solid $val !important;
+  }
+  .border-color-#{$key} {
+    border-color: $val !important;
+  }
+  .border-top-#{$key} {
+    border-top: 1px solid $val !important;
+  }
+  .border-bottom-#{$key} {
+    border-bottom: 1px solid $val !important;
+  }
+  .border-left-#{$key} {
+    border-left: 1px solid $val !important;
+  }
+  .border-right-#{$key} {
+    border-right: 1px solid $val !important;
+  }
+  .border-dashed-#{$key} {
+    border: 1px dashed $val !important;
+  }
+}
+
+body,
+#app {
+  font-family: "Poppins";
+  font-size: $font-size-base;
+  line-height: 1.5rem;
+  background-color: $black-8;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar {
+  // width: 7px !important;
+  background-color: #f5f5f5;
+  width: 0.4em;
+  height: 0.4em;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $blue-1;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.small-10 {
+  line-height: 0.75rem;
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.small-12 {
+  line-height: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  font-weight: normal;
+}
+
+.body-12 {
+  line-height: 1.125rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  font-weight: normal;
+}
+
+.body-14 {
+  line-height: 1.313rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+.body-16 {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.subheading-12 {
+  line-height: 0.875rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.subheading-14 {
+  line-height: 1rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.subheading-16 {
+  line-height: 1.25rem;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.subheading-20 {
+  line-height: 1.5rem;
+  font-size: 1.24rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.heading-24 {
+  line-height: 110%;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.heading-36 {
+  line-height: 110%;
+  font-size: 2.25rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.btn-blue-default {
+  color: $white;
+  background-color: $blue-1;
+  border-color: $blue-1;
+  &:hover {
+    background-color: $blue-2 !important;
+    border-color: $blue-2 !important;
+    color: $white !important;
+  }
+}
+
+.btn-add-default {
+  color: $white;
+  background-color: $black-5;
+  border-color: $black-5;
+  &:hover {
+    background-color: $black-4 !important;
+    border-color: $black-4 !important;
+    color: $white !important;
+  }
+}
+
+.btn-cancle-default {
+  color: $black-5;
+  background-color: $white;
+  border-color: $black-5;
+  &:hover {
+    background-color: $black-4 !important;
+    border-color: $black-4 !important;
+    color: $white !important;
+  }
+}
+
+.btn-white-default {
+  color: $blue-1 !important;
+  background-color: $white !important;
+  border-color: $blue-1 !important;
+  &:hover {
+    background-color: $gray-500 !important;
+    border-color: $gray-500 !important;
+    color: $blue-1 !important;
+  }
+}
+
+.btn-white-disabled {
+  color: $black-2 !important;
+  background-color: $white !important;
+  border-color: $gray-500 !important;
+  cursor: not-allowed !important;
+  &:hover {
+    background-color: $white !important;
+    border-color: $gray-500 !important;
+    color: $black-2 !important;
+  }
+}
+
+// kalo ada button yang pake icon supaya gak kena background, kasih kelas disable-with-icon
+button:disabled:not(.disable-with-icon) {
+  background-color: $black-5 !important;
+  border: none !important;
+}
+
+.disable-with-icon {
+  opacity: 0.5;
+}
+
+.border-none {
+  border: none;
+}
+
+.bg-none {
+  background: none;
+}
+
+.border-blue-1 {
+  border: 1px solid $blue-1;
+}
+
+.border-blue-2 {
+  border: 1px solid $blue-2;
+}
+
+.is-invalid-input {
+  border: 1px solid $red-1;
+  border-radius: 4px;
+}
+
+.no-border-input {
+  input {
+    border: 0px solid !important;
+  }
+}
+
+.min-width-datepicker {
+  width: unset !important;
+}
+
+.hide-label-radio {
+  .el-radio__label {
+    display: none;
+  }
+}
+
+.line-height-small {
+  line-height: 1.2;
+}
+
+.custom-card {
+  border: 1px solid $black-6;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+// css untuk menggunakan library Money dan inputan label RP
+.money-input {
+  > div {
+    background: $black-8;
+    border: 1px solid $black-6;
+    box-sizing: border-box;
+    border-radius: 4px 0px 0px 4px;
+    width: 50px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  input {
+    border-left: none;
+    height: 100%;
+    min-height: 40px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+// overide style select element-ui
+.el-scrollbar__wrap {
+  overflow: auto !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// .disabled-div {
+//     pointer-events: none;
+//     background: $black-5 !important;
+// }
+
+// .enabled-div {
+//     pointer-events: visible;
+// }
+
+.disabled-div {
+  .submenu_list {
+    li.lock {
+      opacity: 0.5 !important;
+    }
+  }
+}
+
+.introjs-skipbutton {
+  display: none !important;
+}
+
+.nav-link-disable {
+  // opacity: .6;
+  pointer-events: none;
+  // background: $gray-500 !important;
+  .icon-lock {
+    top: auto !important;
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+.scrollable-modal {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: calc(100vh - 240px);
+}
+
+.header_name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: $black-1;
+}
+
+.card_borderles {
+  border: 1px solid #ffffff !important;
+  padding: 24px;
+  // margin: 0rem 0rem 0.4rem 0rem;
+  filter: drop-shadow(0px 6px 40px rgba(155, 152, 152, 0.16));
+}
+
+.btn_cancel {
+  background-color: $black-10 !important;
+  color: $black-1 !important;
+  padding: 6px !important;
+  border-radius: 10px !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.el-tooltip__popper {
+  border: 1px solid white !important;
+  font-size: 18px !important;
+  cursor: pointer !important;
+  padding: 0.6rem !important;
+  width: 150px !important;
+  font-family: "Poppins";
+  color: $black-1 !important;
+  box-shadow: -1px 4px 9px 15px rgba(229, 229, 229, 0.28);
+  -webkit-box-shadow: -1px 4px 9px 15px rgba(229, 229, 229, 0.28);
+  -moz-box-shadow: -1px 4px 9px 15px rgba(229, 229, 229, 0.28);
+}
+.el-input__inner {
+  border-radius: 16px !important;
+  height: 36px !important;
+}
+.btn_primary {
+  font-family: "Poppins";
+}
+
+.font_poppins {
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.btn_approved {
+  background-color: #ebffee !important;
+  color: #00b81d !important;
+  padding: 4px !important;
+  border-radius: 4px !important;
+}
+.btn_warning {
+  background-color: $yellow-1 !important;
+  color: $black-1 !important;
+  padding: 6px !important;
+  border-radius: 10px !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+.btn_decline {
+  background-color: #fff8f8 !important;
+  color: #ff4b4b !important;
+  padding: 4px !important;
+  border-radius: 4px !important;
+}
+.btn_pending {
+  background-color: #dcf0ff !important;
+  color: #0085ad !important;
+  padding: 4px !important;
+  border-radius: 4px !important;
+}
+
+// @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/src/index.scss";
+@import "sidebar.scss";
+@import "topbar.scss";
